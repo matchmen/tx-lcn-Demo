@@ -1,0 +1,36 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: web
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/tx-manager?characterEncoding=UTF-8
+    username: root
+    password: 111111
+
+  jpa:
+    generate-ddl: true
+    show-sql: true
+
+  dubbo:
+    application:
+      name: dubbo-cusumer
+    server: false
+    registry:
+      address: zookeeper://127.0.0.1:2181
+    protocol:
+      name: dubbo
+      port: 20880
+    scan: com.mt.web.service.impl
+
+#tx-lcn:
+#  client:
+#    manager-address: 127.0.0.1:9100
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8001/eureka/
+

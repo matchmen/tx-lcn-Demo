@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/GoodsCenter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-feigin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-service-A" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/demo-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/dubbo-common-server-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-A" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-B" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/tx-mangager-demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/web" charset="UTF-8" />
+  </component>
+</project>

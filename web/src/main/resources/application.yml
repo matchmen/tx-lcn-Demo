@@ -1,0 +1,52 @@
+server:
+  port: 8000
+spring:
+  application:
+    name: web
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/tx-manager?characterEncoding=UTF-8
+    username: root
+    password: 111111
+
+#  jpa:
+#    generate-ddl: true
+#    show-sql: true
+
+tx-lcn:
+  client:
+    manager-address: 127.0.0.1:8070
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://localhost:8001/eureka/
+
+dubbo:
+  scan:
+    basePackages: com.mt.web.service.impl
+
+  protocol:
+    id: dubbo
+    name: dubbo
+    port: 28880
+  registry:
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+  application:
+    qos-enable: false
+    id: ServiceWeb
+    name: ServiceWeb
+
+mybatis-plus:
+  global-config:
+    db-config:
+      # 全局主键生成策略：自行输入
+      id-type: input
+  # mapper.xml文件扫描路径
+  mapper-locations: classpath*:mapper/*.xml
+#
+#logging:
+#  level:
+#    root: debug
